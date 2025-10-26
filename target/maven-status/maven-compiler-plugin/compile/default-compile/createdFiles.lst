@@ -1,0 +1,12 @@
+com\example\courseregistrationsystem\entity\Student.class
+com\example\courseregistrationsystem\entity\Course.class
+com\example\courseregistrationsystem\entity\Registration.class
+com\example\courseregistrationsystem\controller\LoginController.class
+com\example\courseregistrationsystem\controller\DashboardController.class
+com\example\courseregistrationsystem\service\CourseService.class
+com\example\courseregistrationsystem\DataLoader.class
+com\example\courseregistrationsystem\MainApp.class
+com\example\courseregistrationsystem\service\StudentService.class
+com\example\courseregistrationsystem\controller\SignUpController.class
+com\example\courseregistrationsystem\service\HibernateUtil.class
+com\example\courseregistrationsystem\service\RegistrationService.class
