@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.courseregistrationsystem.controller.DashboardController"
+            prefHeight="400" prefWidth="600">
+    <top>
+        <VBox alignment="CENTER" style="-fx-padding: 10;">
+            <Text fx:id="welcomeText" style="-fx-font-size: 18px;" text="Welcome!"/>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="10" style="-fx-padding: 10;">
+            <Text text="Available Courses" style="-fx-font-weight: bold;"/>
+            <TableView fx:id="availableCoursesTable">
+                <columns>
+                    <TableColumn fx:id="colCourseCode" text="Code" prefWidth="75"/>
+                    <TableColumn fx:id="colCourseTitle" text="Title" prefWidth="150"/>
+                    <TableColumn fx:id="colCapacity" text="Capacity" prefWidth="75"/>
+                    <TableColumn fx:id="colEnrolled" text="Enrolled" prefWidth="75"/>
+                </columns>
+            </TableView>
+            <Button text="Register for Selected Course" onAction="#handleRegisterButtonAction"/>
+            <Label fx:id="registrationStatusLabel"/>
+        </VBox>
+    </center>
+
+    <right>
+        <VBox spacing="10" style="-fx-padding: 10; -fx-background-color: #f4f4f4;" prefWidth="200">
+            <Text text="My Courses" style="-fx-font-weight: bold;"/>
+            <ListView fx:id="myCoursesList"/>
+        </VBox>
+    </right>
+</BorderPane>
